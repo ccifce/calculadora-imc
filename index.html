@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde Corporal e IMC | Guia Essencial</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <script type="text/javascript" id="MathJax-script" 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <script>
+    Mathjax = {
+        tex:{
+            inlineMath:[['$', '$'],['\(','\\)']]
+        }
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Saúde Corporal e Mental</h1>
+    <p>Descubra como cuidar do seu corpo e mente para uma vida equilibrada e saudável, utilizando o IMC como indicador.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>✅ Entendendo o IMC</h2>
+      <p>O ndice de Massa Corporal (IMC) é uma ferramenta de triagem simples e de baixo custo utilizada pela Organização Mundial da Saúde (OMS) para estimar se o peso de uma pessoa está adequado à sua altura. Ele é o principal indicador para classificar o estado nutricional de adultos e identificar problemas como desnutrição, sobrepeso e obesidade.</p>
+
+      <h3>📐 Como o IMC é Calculado?</h3>
+      <p>O cálculo é feito dividindo o peso do indivíduo (em quilogramas) pela sua altura elevada ao quadrado (em metros).</p>
+      $$
+      \text{IMC} = \frac{\text{Peso } (\text{kg})}{\text{Altura}^2 (\text{m}^2)}
+      $$
+      <p>O resultado é dado em Kg/m² e, em adultos, a interpretação se baseia em faixas padronizadas, que você confere abaixo.</p>
+
+      <h3>⚠️ Limitações do IMC</h3>
+      <p>Embora seja um indicador útil, o IMC não diferencia a massa muscular de massa gorda,  nem a distribuição da gordura corporal. Por isso, pode não ser a melhor avaliação para:</p>
+      <ul>
+        <li>Atletas e Fisiculturistas: Podem ter IMC elevado devido à grande massa muscular, mas com baixo percentual de gordura.</li>
+        <li>Idosos: A composição corporal muda com a idade, e o ponto de corte para um IMC saudável pode ser diferente (geralmente um pouco mais alto).</li>
+        <li>Gestantes: Os valores de referência mudam conforme a idade gestacional.</li>
+      </ul>
+      <p>O IMC deve ser visto como um ponto de partida é sempre interpretado em conjunto com uma avaliação clínica completa por um profissional de saúde.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>🌟 A Importância da Saúde Corporal e Mental</h2>
+      <p>Manter um peso saudável e um estilo de vida ativo vai muito além da estética. É essencial para o funcionamento ideal do organismo e o equilíbrio emocional</p>
+
+      <h3>🧠 Saúde Mental e Cognitiva</h3>
+      <p>A prática regular de exercícios físicos estimula a liberação de endorfinas e outros neurotransmissores (como a serotonina e dopamina) que atuam como analgésicos e promotores de bem-estar. Isso resulta em:</p>
+      <ul>
+        <li>Redução de Estresse e Ansiedade: Funcionando como um "escape" natural para tensões.</li>
+        <li>Melhora do Foco e Produtividade: A atividade física aumenta o fluxo sanguíneo  para o cérebro.</li>
+        <li>Prevenção de Depressão: Hábitos saudáveis são um fator protetor contra transtornos do humor.</li>
+      </ul>
+
+      <h3>😴 Qualidade do Sono e Energia</h3>
+      <p>Uma dieta balanceada e a prática de exercícios ajudam a regular o ciclo circadiano, melhorando a qualidade e a duração do sono. Dormir bem é fundamental para a recuperação muscular e mental, aumentando a energia e a disposição para as atividades de rotinas.</p>
+
+      <h3>❤️ Prevenção de Doenças Crônicas</h3>
+      <p>Manter o IMC na faixa normal reduz significativamente o risco de desenvolver doenças como:</p>
+      <ul>
+        <li>Hipertensão (Pressão Alta).</li>
+        <li>Diabetes Tipo 2.</li>
+        <li>Doenças Cardiovasculares (Infarto e AVC).</li>
+        <li>Alguns tipos de Câncer.</li>
+      </ul>
+      <p>O peso adequado fortalece o sistema imunológico, deixando o corpo mais resistente a infecções.</p>
+    </section>
+
+    <hr>
+
+    <section class="imc-calculadora">
+      <h2>🧮 Calculadora de IMC (Adultos)</h2>
+      <p>Insira seus dados para verificar sua faixa de IMC. Atenção: Os valores são para adultos (20 a 59 anos) e a classificação pode variar para idosos, atletas e gestantes.</p>
+
+      <label for="altura">Altura (em metros):</label>
+      <input type="number" id="altura" step="0.01" placeholder="Ex: 1.70">
+
+      <label for="peso">Peso (em kg):</label>
+      <input type="number" id="peso" step="0.1" placeholder="Ex: 70.5">
+
+      <button id="calcular">Calcular IMC</button>
+      <p id="resultado"></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>📚 Fontes de Informação e Autores</h2>
+      <h3>Fontes Base</h3>
+      <ul>
+        <li><a href="https://www.tuasaude.com/calculadora/imc/" target="_blank">Tua Saúde – Calculadora de IMC</a></li>
+        <li><a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">Organização Mundial da Saúde (OMS) – Obesidade e Sobrepeso</a></li>
+      </ul>
+
+      <h3>Autores do Projeto Acadêmico</h3>
+      <p>Este projeto foi desenvolvido por:</p>
+      <ul>
+        <li>[Arthur Lemos de Oliveira] - <em>Bacharelado em Ciências da Computação IFCE S2</em></li>
+        <li>[Victor Gabriel Pereria Almeida]- <em>Bacharelado em Ciências da Computação IFCE S2</em></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cuide da sua saúde física e mental. Equilíbrio é a chave para uma vida longa e feliz.</p>
+    <p>© 2025 Equipe de Nutrição – Projeto Acadêmico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
